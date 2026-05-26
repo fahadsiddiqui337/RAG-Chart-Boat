@@ -84,8 +84,8 @@ export const ChatBox = ({ conversationId, onConversationChange }: ChatBoxProps) 
         sources: response.sources,
       };
 
-      setMessages(prev => [...prev, assistantMessage]);
-      setCurrentConversationId(response.conversation_id);
+      setCurrentConversationId(response.conversation_id || '');
+      onConversationChange(response.conversation_id || '');
       onConversationChange(response.conversation_id);
     } catch (error) {
       console.error('Error sending message:', error);
