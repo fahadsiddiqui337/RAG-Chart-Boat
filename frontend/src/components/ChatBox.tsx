@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { apiClient, ChatResponse, Message } from '../services/api';
 import '../styles/ChatBox.css';
 
@@ -12,7 +12,7 @@ interface CopyFeedback {
   visible: boolean;
 }
 
-export const ChatBox: React.FC<ChatBoxProps> = ({ conversationId, onConversationChange }) => {
+export const ChatBox = ({ conversationId, onConversationChange }: ChatBoxProps) => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
