@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes import chat, documents, health
+from routes import chat, documents, health
 
 # Create FastAPI app
 app = FastAPI(
