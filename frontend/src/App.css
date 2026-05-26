@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #0066cc;
+  --primary-dark: #0052a3;
+  --primary-light: #e6f0ff;
+  --secondary-color: #00d4ff;
+  --success-color: #00b341;
+  --warning-color: #ff9500;
+  --error-color: #e74c3c;
+  --bg-color: #f5f7fa;
+  --bg-dark: #ffffff;
+  --card-bg: #ffffff;
+  --text-color: #1a202c;
+  --text-secondary: #718096;
+  --border-color: #e0e8f0;
+  --user-message-bg: #0066cc;
+  --user-message-text: #ffffff;
+  --assistant-message-bg: #f0f4f8;
+  --assistant-message-text: #1a202c;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: var(--bg-color);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+.content-top {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.content-bottom {
+  flex: 1;
+  padding: 24px;
+  overflow: hidden;
+  display: flex;
+}
